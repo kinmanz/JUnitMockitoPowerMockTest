@@ -38,6 +38,8 @@ public class TestApplySqlFileIfExistsChange {
     @Mock
     Statement statement;
 
+//    Before all assigns in test it will be executed and only once
+//it's helpful to prepare runtime context of tested class
     @BeforeClass
     public static void setUpClass() {
         mockStatic(LoggerFactory.class);
