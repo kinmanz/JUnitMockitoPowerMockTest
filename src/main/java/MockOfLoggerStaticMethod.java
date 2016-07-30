@@ -19,38 +19,6 @@ import static org.mockito.Mockito.verify;
 public class MockOfLoggerStaticMethod {
 }
 
-package com.peterservice.openapi.cms.core.support.liquibase;
-
-        import com.google.common.collect.Sets;
-        import liquibase.database.Database;
-        import liquibase.database.jvm.JdbcConnection;
-        import liquibase.resource.ResourceAccessor;
-        import org.junit.Before;
-        import org.junit.BeforeClass;
-        import org.junit.Test;
-        import org.junit.runner.RunWith;
-        import org.mockito.InOrder;
-        import org.mockito.InjectMocks;
-        import org.mockito.Mock;
-        import org.mockito.Spy;
-        import org.powermock.api.mockito.PowerMockito;
-        import org.powermock.core.classloader.annotations.PrepareForTest;
-        import org.powermock.modules.junit4.PowerMockRunner;
-        import org.slf4j.Logger;
-        import org.slf4j.LoggerFactory;
-
-        import java.io.ByteArrayInputStream;
-        import java.io.InputStream;
-        import java.nio.charset.StandardCharsets;
-        import java.sql.Statement;
-
-        import static org.mockito.Matchers.anyString;
-        import static org.mockito.Matchers.isA;
-        import static org.mockito.Mockito.inOrder;
-        import static org.mockito.Mockito.verify;
-        import static org.mockito.internal.verification.VerificationModeFactory.times;
-        import static org.powermock.api.mockito.PowerMockito.*;
-
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({LoggerFactory.class})
 public class TestApplySqlFileIfExistsChange {
